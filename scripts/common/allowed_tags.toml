@@ -1,0 +1,23 @@
+[[tags]]
+tags = ["docs", "LLM", "ML", "CS_web", "CS", "CS_systems", "comp", "algorithms", "tool", "free", "API",
+"math_anal", "math_comb", "math_prob", "science_data", "research", "curriculum", "skill_net", "math",
+"exercises", "knowledge", "navigation", "evaluator", "generator", "job", "image", "audio", "visuals",
+"data", "studying", "ML_model", "challenges", "other", "cybersec", "book", "CV", "physics", "TP", "tcd_books_JS",
+"health",
+"lectures"]
+
+# Tag fields: a grouping of the tags above, so tag_help can offer a shortlist instead of
+# all 33 at once. Membership overlaps on purpose -- "LLM" is both a CS tag and a tool tag.
+[tags_type]
+math = ["math_anal", "math_comb", "math_prob", "math", "book", "TP"]
+science = ["science_data", "research", "book", "physics", "TP"]
+CS = ["CS_web", "CS", "CS_systems", "comp", "algorithms", "ML_model", "ML", "LLM", "docs", "cybersec", "book"]
+navigation = ["navigation", "curriculum", "skill_net", "research"]
+LLM = ["LLM", "free", "evaluator", "generator"]
+tool = ["tool", "LLM", "ML_model", "free", "API", "CV"]
+general = ["knowledge", "exercises", "studying", "data", "challenges", "tcd_books_JS"]
+format = ["visuals", "audio", "image", "lectures"]
+job = ["job", "CV"]
+data = ["data", "book", "tcd_books_JS", "lectures"]
+health = ["data", "health", "image", "knowledge"]
+other = ["other"]

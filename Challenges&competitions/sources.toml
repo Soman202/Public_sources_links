@@ -1,0 +1,17 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = []
+
+[[source]]
+id = "build-your-own-insert-technology-here"
+title = "Build your own <insert-technology-here>"
+importance=7
+description = "This is a difficult challenges designed to build a known tools with my bare hards (Excellent practice!). Could help with AI Model, Augmented Reality, Bot, Command-Line Tool, Database and much more!"
+urls = ["https://codecrafters.io/", "https://github.com/codecrafters-io/build-your-own-x"]
+tags = ["CS", "challenges"]
+checked = "No"
+files = []
+platform = ""
+cost = ""
+date_editing = "2026-09-05"
+notes = ""

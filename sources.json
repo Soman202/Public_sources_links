@@ -1,0 +1,826 @@
+{
+  "generated_at": "2026-09-19",
+  "count": 40,
+  "sources": [
+    {
+      "id": "a-redit-link-with-lots-of-links",
+      "title": "A Redit link with lots of links",
+      "importance": 4,
+      "description": "A complete Prompt engineering list of links for pormpt engineering.",
+      "urls": [
+        "https://www.reddit.com/r/PromptEngineering/comments/120fyp1/useful_links_for_getting_started_with_prompt/"
+      ],
+      "tags": [
+        "LLM"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "reddit",
+      "cost": "",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "AI_cources"
+    },
+    {
+      "id": "W7-llm-clau-VXDHGW",
+      "title": "Claude Academy",
+      "importance": 7,
+      "description": "Banch of AI courses from Claud, including prompt engineering, agentic, workflows. It also has interesting topics on the AI limitations and capabilities.",
+      "urls": [
+        "https://academy.claude.com/",
+        "https://anthropic.skilljar.com/"
+      ],
+      "tags": [
+        "LLM",
+        "knowledge",
+        "curriculum",
+        "CS"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "web",
+      "cost": "free",
+      "date_editing": "2026-09-06",
+      "notes": "certificate",
+      "folder": "AI_cources"
+    },
+    {
+      "id": "F9-llm-mult-7UVED4",
+      "title": "Multiple studying formats",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/AI prompts for studying/Multiple_studying_formats.md.",
+      "urls": [],
+      "tags": [
+        "LLM"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/AI prompts for studying/Multiple_studying_formats.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-llm-prom-M385AD",
+      "title": "Prompts for studying",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/AI prompts for studying/Prompts_for_studying.md.",
+      "urls": [],
+      "tags": [
+        "LLM"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/AI prompts for studying/Prompts_for_studying.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-gen-data-8MPM4N",
+      "title": "datamining clusterisation",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/Datasets_for_project/datamining_clusterisation.md.",
+      "urls": [],
+      "tags": [],
+      "checked": "No",
+      "files": [
+        "Attachments/Datasets_for_project/datamining_clusterisation.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-doc-git--0WK6JH",
+      "title": "git-commands-reference",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/GitHub_docs/git-commands-reference.md.",
+      "urls": [],
+      "tags": [
+        "docs"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/GitHub_docs/git-commands-reference.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-boo-high-OFOQ00",
+      "title": "High Dim Probability Vershynin",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/Math_books/High_Dim_Probability_Vershynin.pdf.",
+      "urls": [],
+      "tags": [
+        "book",
+        "math_prob",
+        "math"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/Math_books/High_Dim_Probability_Vershynin.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-doc-toml-5TOEGO",
+      "title": "tomlkit-guide",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/Python_libraries_docs/tomlkit-guide.md.",
+      "urls": [],
+      "tags": [
+        "docs"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/Python_libraries_docs/tomlkit-guide.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-gen-grid-1BBLH1",
+      "title": "grid glossary leveled",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/grid_glossary_leveled.md.",
+      "urls": [],
+      "tags": [],
+      "checked": "No",
+      "files": [
+        "Attachments/TPSA_hackathon2026/grid_glossary_leveled.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-gen-mode-UQNE93",
+      "title": "Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System.pdf.",
+      "urls": [],
+      "tags": [],
+      "checked": "No",
+      "files": [
+        "Attachments/TPSA_hackathon2026/Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-gen-run--IT6G2X",
+      "title": "run-colab-on-a-virtual-space",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/run-colab-on-a-virtual-space.md.",
+      "urls": [],
+      "tags": [],
+      "checked": "No",
+      "files": [
+        "Attachments/TPSA_hackathon2026/run-colab-on-a-virtual-space.md"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-gen-wind-JAXDBC",
+      "title": "Wind Dispatch Tool Constraint Group Overview",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/Wind Dispatch Tool Constraint Group Overview.pdf.",
+      "urls": [],
+      "tags": [],
+      "checked": "No",
+      "files": [
+        "Attachments/TPSA_hackathon2026/Wind Dispatch Tool Constraint Group Overview.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-14",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-oth-full-ODFP4P",
+      "title": "full program AB v22 july5 (2)",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/.other/full_program_AB_v22_july5 (2).html.",
+      "urls": [],
+      "tags": [
+        "other"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/.other/full_program_AB_v22_july5 (2).html"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-llm-math-Y5W94D",
+      "title": "math explanation transformers",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/AI related/math_explanation_transformers.pdf.",
+      "urls": [],
+      "tags": [
+        "LLM"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/AI related/math_explanation_transformers.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-cs-math-1RSC91",
+      "title": "math foundation DeepLearning",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/CS_books/math_foundation_DeepLearning.pdf.",
+      "urls": [],
+      "tags": [
+        "CS",
+        "book",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/CS_books/math_foundation_DeepLearning.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-cs-ml-0RYCRW",
+      "title": "ML CS main notes",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/CS_books/ML_CS_main_notes.pdf.",
+      "urls": [],
+      "tags": [
+        "CS",
+        "book",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/CS_books/ML_CS_main_notes.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-cs-nlp--R6P5OR",
+      "title": "nlp-books navigation",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/CS_books/nlp-books_navigation.pdf.",
+      "urls": [],
+      "tags": [
+        "CS",
+        "book",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/CS_books/nlp-books_navigation.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-tcd-ashc-T6CAJG",
+      "title": "Ashcroft Mermin eng",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TCD_books_JS/Physics/Ashcroft_Mermin_eng.pdf.",
+      "urls": [],
+      "tags": [
+        "tcd_books_JS",
+        "knowledge",
+        "book",
+        "physics"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/TCD_books_JS/Physics/Ashcroft_Mermin_eng.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-tp-lect-5XJJUO",
+      "title": "Lectures on Geometric Anatomy of Theoretical Physics",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TP_materials/Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf.",
+      "urls": [],
+      "tags": [
+        "TP",
+        "knowledge",
+        "math",
+        "physics"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/TP_materials/Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "F9-tcd-prin-BK3AHN",
+      "title": "Principles of Quantum Mechanics 2nd ed. - R. Shankar",
+      "importance": 9,
+      "description": "Auto-added by update_files.py from Attachments/TCD_books_JS/TP/Principles of Quantum Mechanics 2nd ed. - R. Shankar.pdf.",
+      "urls": [],
+      "tags": [
+        "tcd_books_JS",
+        "knowledge",
+        "book",
+        "TP"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments/TCD_books_JS/TP/Principles of Quantum Mechanics 2nd ed. - R. Shankar.pdf"
+      ],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Attachments"
+    },
+    {
+      "id": "build-your-own-insert-technology-here",
+      "title": "Build your own <insert-technology-here>",
+      "importance": 7,
+      "description": "This is a difficult challenges designed to build a known tools with my bare hards (Excellent practice!). Could help with AI Model, Augmented Reality, Bot, Command-Line Tool, Database and much more!",
+      "urls": [
+        "https://codecrafters.io/",
+        "https://github.com/codecrafters-io/build-your-own-x"
+      ],
+      "tags": [
+        "CS",
+        "challenges"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "Challenges&competitions"
+    },
+    {
+      "id": "coding-interview-university",
+      "title": "coding-interview-university",
+      "importance": 6,
+      "description": "A complete course of software engineering that person followed for a few month and ended up in Amazon (also had interviewed by Google)",
+      "urls": [
+        "https://github.com/jwasham/coding-interview-university"
+      ],
+      "tags": [
+        "CS",
+        "CS_web",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "system-design-primer",
+      "title": "system-design-primer",
+      "importance": 2,
+      "description": "A system design educational repo with anki flashcards for space repetition (?good for AI era as any prompt need a good structure and system design?).",
+      "urls": [
+        "https://github.com/donnemartin/system-design-primer"
+      ],
+      "tags": [
+        "CS",
+        "CS_systems",
+        "free",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "free",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "full-stack-open",
+      "title": "Full Stack Open",
+      "importance": 8,
+      "description": "THis is an open cource on Full stack web development from Uni of Helsinki and solutions (by someone in GitHub)",
+      "urls": [
+        "https://www.helsinki.fi/en/admissions-and-education/open-university/multidisciplinary-themed-modules/full-stack",
+        "https://github.com/jarvensivu/full-stack-open"
+      ],
+      "tags": [
+        "CS_web",
+        "free",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "the-missing-semester-of-your-cs-education-mit",
+      "title": "The Missing Semester of Your CS Education (MIT)",
+      "importance": 4,
+      "description": "A short course on the things that are usefull but usualy skipped during the education. Git managment, packaging, agentic coding, debugging, development and else.",
+      "urls": [
+        "https://missing.csail.mit.edu/"
+      ],
+      "tags": [
+        "CS",
+        "free",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W4-ml-mach-CKOPLB",
+      "title": "Machine Learning Crash Course",
+      "importance": 4,
+      "description": "Text tutorials from Google with diverge fields. Starting from basic quickly progress to the advance staff. The path is roughly linear regresion -> data -> NN & LLM -> real world",
+      "urls": [
+        "https://developers.google.com/machine-learning/crash-course"
+      ],
+      "tags": [
+        "ML",
+        "LLM",
+        "knowledge",
+        "curriculum",
+        "CS"
+      ],
+      "checked": "first look",
+      "files": [],
+      "platform": "web",
+      "cost": "free",
+      "date_editing": "2026-09-05",
+      "notes": "certificate",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W6-ml-ibm-7O91MS",
+      "title": "IBM Data Science Professional Certificate",
+      "importance": 6,
+      "description": "Generic course of Machine Learning from IBM",
+      "urls": [
+        "https://www.coursera.org/professional-certificates/ibm-data-science"
+      ],
+      "tags": [
+        "ML",
+        "LLM",
+        "knowledge",
+        "curriculum",
+        "CS"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "web",
+      "cost": "free",
+      "date_editing": "2026-09-05",
+      "notes": "certificate",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W6-cyb-gett-D0EPM9",
+      "title": "Getting into cyber security",
+      "importance": 6,
+      "description": "CyberSec courses by Cisco. Has multiple levels and depth, with cybersec essentials in 30 hours.",
+      "urls": [
+        "https://www.cisco.com/c/m/en_emear/campaigns/security/cybersecurity-essentials.html",
+        "https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=en-US"
+      ],
+      "tags": [
+        "cybersec",
+        "knowledge",
+        "curriculum",
+        "CS"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "web",
+      "cost": "free",
+      "date_editing": "2026-09-05",
+      "notes": "certificate",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W8-cs-cs50-SEM1LW",
+      "title": "CS50 Harvard computer science cource",
+      "importance": 8,
+      "description": "A generic course on computer sience of introduction level.",
+      "urls": [
+        "https://pll.harvard.edu/course/cs50-introduction-computer-science"
+      ],
+      "tags": [
+        "CS",
+        "knowledge",
+        "curriculum"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "web",
+      "cost": "free",
+      "date_editing": "2026-09-06",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W3-ml-pinn-VYBMFR",
+      "title": "PINN (Physics-informed neural networks)",
+      "importance": 3,
+      "description": "Neural networks with encoded in them Physics. This is a very interesting and important topic for me as a physisist.",
+      "urls": [
+        "https://habr.com/ru/articles/748538/"
+      ],
+      "tags": [
+        "ML",
+        "ML_model",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "post",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "4 min to read",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W5-cs-kagg-WWADH1",
+      "title": "Kaggle Learn",
+      "importance": 5,
+      "description": "A website with dozens of free cources. Especial interest to Ai agents, ML cources etc.",
+      "urls": [
+        "https://www.kaggle.com/learn"
+      ],
+      "tags": [
+        "CS",
+        "ML",
+        "LLM",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "website",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W6-cs-spec-62F39U",
+      "title": "Spec-Driven Development with Coding Agents",
+      "importance": 6,
+      "description": "Jet Brain reccomended course on AI agents.",
+      "urls": [
+        "https://www.deeplearning.ai/courses/spec-driven-development-with-coding-agents?map=2&mkt_tok=NDI2LVFWRC0xMTQAAAGh3yMcYCjxOu_OBzZ4LZgLPxjX8bMCSeJzMy3_tRlo7KTbyah9QMqf3f_wY1thLvEP7bMMm2zM2Tpp0qyVDhYFDyDFe_0GIYG07g_RjJppNSVDmamg"
+      ],
+      "tags": [
+        "CS",
+        "ML",
+        "LLM",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "website",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W6-cs-pyth-AR2Q3K",
+      "title": "Python: Mastering Pandas Essentials",
+      "importance": 6,
+      "description": "Jet Brain reccomended course on mastering pandas. I need it for my own code improoving skills.",
+      "urls": [
+        "https://www.coursera.org/learn/jb-python-mastering-pandas-essentials"
+      ],
+      "tags": [
+        "CS",
+        "ML",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "coursera",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "",
+      "folder": "CS_cources"
+    },
+    {
+      "id": "W7-dat-ptb--0516L7",
+      "title": "PTB-XL, a large publicly available electrocardiography dataset",
+      "importance": 7,
+      "description": "A dataset (3 GB) of electrocardiography for variety of ages and additional information such as age, sex, height, weight, nurse, site, device and recording_date",
+      "urls": [
+        "https://physionet.org/content/ptb-xl/1.0.3/"
+      ],
+      "tags": [
+        "data",
+        "health"
+      ],
+      "checked": "first look",
+      "files": [],
+      "platform": "website",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "",
+      "folder": "data"
+    },
+    {
+      "id": "gpt-visualisation",
+      "title": "GPT visualisation",
+      "importance": 5,
+      "description": "This is a visualisation of GPT work.",
+      "urls": [
+        "https://github.com/bbycroft/llm-viz"
+      ],
+      "tags": [
+        "visuals"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "free",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "Fun&visuals"
+    },
+    {
+      "id": "W9-dat-3d-L43MBS",
+      "title": "3D Human Body Atlas",
+      "importance": 9,
+      "description": "This is a hyped 3D atlas of human body. Could be usefull for studying the anatomy.",
+      "urls": [
+        "https://github.com/ashemag/human-atlas"
+      ],
+      "tags": [
+        "data",
+        "health",
+        "visuals"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "free",
+      "date_editing": "2026-09-15",
+      "notes": "",
+      "folder": "Fun&visuals"
+    },
+    {
+      "id": "ultimate-web-scraper",
+      "title": "Ultimate Web Scraper",
+      "importance": 6,
+      "description": "If payed - automatic text and image Scraper from the websites including text, image or other elements. Could be connected directly to Claud, GPT and even MCP (claud code, cursor, copilot)",
+      "urls": [
+        "https://ultimatewebscraper.com/",
+        "https://github.com/ArthurSav/ultimate-web-scraper"
+      ],
+      "tags": [
+        "CS_web",
+        "tool"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "tool",
+      "cost": "$60 per year (10,000 cloud credits)",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "Tools"
+    },
+    {
+      "id": "simplescraper",
+      "title": "Simplescraper",
+      "importance": 6,
+      "description": "Only text, limited free, has API key, so could be called directly using REST.",
+      "urls": [
+        "https://simplescraper.io/"
+      ],
+      "tags": [
+        "CS_web",
+        "tool"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "tool",
+      "cost": "$39 per month (6,00 cloud credits)",
+      "date_editing": "2026-09-05",
+      "notes": "",
+      "folder": "Tools"
+    },
+    {
+      "id": "F4-tp-lect-4WU23R",
+      "title": "Lectures on the Geometric Anatomy of Theoretical Physics",
+      "importance": 4,
+      "description": "All essential math for Theoretical Physics in 35 lectures. Starts with linear aglebra and rapidly continues through matg. Topics include Lie algebras and Lie groups; differential geometry.",
+      "urls": [
+        "https://www.youtube.com/watch?v=V49i_LM8B0E&list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic"
+      ],
+      "tags": [
+        "TP",
+        "lectures",
+        "knowledge",
+        "math"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments\\TP_materials\\Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"
+      ],
+      "platform": "youtube",
+      "cost": "free",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Education_materials/TP"
+    },
+    {
+      "id": "W3-tp-saku-21THUH",
+      "title": "Sakurai's Modern Quantum Mechanics",
+      "importance": 3,
+      "description": "QM reccomended book with lots of material in it. Containts a book and sumplementary materials to it.",
+      "urls": [
+        "https://github.com/yqchen-sci/Quantum-Mechanics/blob/master/README.md"
+      ],
+      "tags": [
+        "TP",
+        "book",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "free",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Education_materials/TP"
+    }
+  ]
+}

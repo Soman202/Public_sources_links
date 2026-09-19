@@ -1,0 +1,33 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = [
+    "N.B. Prompt engineering is seemed to become less and less important as models will know how to perform everything by themself.",
+]
+
+[[source]]
+id = "a-redit-link-with-lots-of-links"
+title = "A Redit link with lots of links"
+importance=4
+description = "A complete Prompt engineering list of links for pormpt engineering."
+urls = ["https://www.reddit.com/r/PromptEngineering/comments/120fyp1/useful_links_for_getting_started_with_prompt/"]
+tags = ["LLM"]
+checked = "No"
+files = []
+platform = "reddit"
+cost = ""
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "W7-llm-clau-VXDHGW"
+title = "Claude Academy"
+importance = 7
+description = "Banch of AI courses from Claud, including prompt engineering, agentic, workflows. It also has interesting topics on the AI limitations and capabilities."
+urls = ["https://academy.claude.com/", "https://anthropic.skilljar.com/"]
+tags = ["LLM", "knowledge", "curriculum", "CS"]
+checked = "No"
+files = []
+platform = "web"
+cost = "free"
+date_editing = "2026-09-06"
+notes = "certificate"

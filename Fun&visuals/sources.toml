@@ -1,0 +1,31 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = []
+
+[[source]]
+id = "gpt-visualisation"
+title = "GPT visualisation"
+importance=5
+description = "This is a visualisation of GPT work."
+urls = ["https://github.com/bbycroft/llm-viz"]
+tags = ["visuals"]
+checked = "No"
+files = []
+platform = "github"
+cost = "free"
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "W9-dat-3d-L43MBS"
+title = "3D Human Body Atlas"
+importance = 9
+description = "This is a hyped 3D atlas of human body. Could be usefull for studying the anatomy."
+urls = ["https://github.com/ashemag/human-atlas"]
+tags = ["data", "health", "visuals"]
+checked = "No"
+files = []
+platform = "github"
+cost = "free"
+date_editing = "2026-09-15"
+notes = ""

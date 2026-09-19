@@ -1,0 +1,27 @@
+[[source]]
+id = "F4-tp-lect-4WU23R"
+title = "Lectures on the Geometric Anatomy of Theoretical Physics"
+importance = 4
+description = "All essential math for Theoretical Physics in 35 lectures. Starts with linear aglebra and rapidly continues through matg. Topics include Lie algebras and Lie groups; differential geometry."
+urls = ["https://www.youtube.com/watch?v=V49i_LM8B0E&list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic"]
+tags = ["TP", "lectures", "knowledge", "math"]
+checked = "No"
+files = ["Attachments\\TP_materials\\Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"]
+platform = "youtube"
+cost = "free"
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "W3-tp-saku-21THUH"
+title = "Sakurai's Modern Quantum Mechanics"
+importance = 3
+description = "QM reccomended book with lots of material in it. Containts a book and sumplementary materials to it."
+urls = ["https://github.com/yqchen-sci/Quantum-Mechanics/blob/master/README.md"]
+tags = ["TP", "book", "knowledge"]
+checked = "No"
+files = []
+platform = "github"
+cost = "free"
+date_editing = "2026-09-19"
+notes = ""

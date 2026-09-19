@@ -1,0 +1,251 @@
+[[source]]
+id = "F9-llm-mult-7UVED4"
+title = "Multiple studying formats"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/AI prompts for studying/Multiple_studying_formats.md."
+urls = []
+tags = ["LLM"]
+checked = "No"
+files = ["Attachments/AI prompts for studying/Multiple_studying_formats.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-llm-prom-M385AD"
+title = "Prompts for studying"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/AI prompts for studying/Prompts_for_studying.md."
+urls = []
+tags = ["LLM"]
+checked = "No"
+files = ["Attachments/AI prompts for studying/Prompts_for_studying.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-gen-data-8MPM4N"
+title = "datamining clusterisation"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/Datasets_for_project/datamining_clusterisation.md."
+urls = []
+tags = []
+checked = "No"
+files = ["Attachments/Datasets_for_project/datamining_clusterisation.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-doc-git--0WK6JH"
+title = "git-commands-reference"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/GitHub_docs/git-commands-reference.md."
+urls = []
+tags = ["docs"]
+checked = "No"
+files = ["Attachments/GitHub_docs/git-commands-reference.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-boo-high-OFOQ00"
+title = "High Dim Probability Vershynin"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/Math_books/High_Dim_Probability_Vershynin.pdf."
+urls = []
+tags = ["book", "math_prob", "math"]
+checked = "No"
+files = ["Attachments/Math_books/High_Dim_Probability_Vershynin.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-doc-toml-5TOEGO"
+title = "tomlkit-guide"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/Python_libraries_docs/tomlkit-guide.md."
+urls = []
+tags = ["docs"]
+checked = "No"
+files = ["Attachments/Python_libraries_docs/tomlkit-guide.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-gen-grid-1BBLH1"
+title = "grid glossary leveled"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/grid_glossary_leveled.md."
+urls = []
+tags = []
+checked = "No"
+files = ["Attachments/TPSA_hackathon2026/grid_glossary_leveled.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-gen-mode-UQNE93"
+title = "Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System.pdf."
+urls = []
+tags = []
+checked = "No"
+files = ["Attachments/TPSA_hackathon2026/Modelling Renewable Curtailment and Constraints  in Ireland’s Electricity System.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-gen-run--IT6G2X"
+title = "run-colab-on-a-virtual-space"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/run-colab-on-a-virtual-space.md."
+urls = []
+tags = []
+checked = "No"
+files = ["Attachments/TPSA_hackathon2026/run-colab-on-a-virtual-space.md"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-gen-wind-JAXDBC"
+title = "Wind Dispatch Tool Constraint Group Overview"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TPSA_hackathon2026/Wind Dispatch Tool Constraint Group Overview.pdf."
+urls = []
+tags = []
+checked = "No"
+files = ["Attachments/TPSA_hackathon2026/Wind Dispatch Tool Constraint Group Overview.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-14"
+notes = ""
+
+[[source]]
+id = "F9-oth-full-ODFP4P"
+title = "full program AB v22 july5 (2)"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/.other/full_program_AB_v22_july5 (2).html."
+urls = []
+tags = ["other"]
+checked = "No"
+files = ["Attachments/.other/full_program_AB_v22_july5 (2).html"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-llm-math-Y5W94D"
+title = "math explanation transformers"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/AI related/math_explanation_transformers.pdf."
+urls = []
+tags = ["LLM"]
+checked = "No"
+files = ["Attachments/AI related/math_explanation_transformers.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-cs-math-1RSC91"
+title = "math foundation DeepLearning"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/CS_books/math_foundation_DeepLearning.pdf."
+urls = []
+tags = ["CS", "book", "knowledge"]
+checked = "No"
+files = ["Attachments/CS_books/math_foundation_DeepLearning.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-cs-ml-0RYCRW"
+title = "ML CS main notes"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/CS_books/ML_CS_main_notes.pdf."
+urls = []
+tags = ["CS", "book", "knowledge"]
+checked = "No"
+files = ["Attachments/CS_books/ML_CS_main_notes.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-cs-nlp--R6P5OR"
+title = "nlp-books navigation"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/CS_books/nlp-books_navigation.pdf."
+urls = []
+tags = ["CS", "book", "knowledge"]
+checked = "No"
+files = ["Attachments/CS_books/nlp-books_navigation.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-tcd-ashc-T6CAJG"
+title = "Ashcroft Mermin eng"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TCD_books_JS/Physics/Ashcroft_Mermin_eng.pdf."
+urls = []
+tags = ["tcd_books_JS", "knowledge", "book", "physics"]
+checked = "No"
+files = ["Attachments/TCD_books_JS/Physics/Ashcroft_Mermin_eng.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-tp-lect-5XJJUO"
+title = "Lectures on Geometric Anatomy of Theoretical Physics"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TP_materials/Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf."
+urls = []
+tags = ["TP", "knowledge", "math", "physics"]
+checked = "No"
+files = ["Attachments/TP_materials/Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""
+
+[[source]]
+id = "F9-tcd-prin-BK3AHN"
+title = "Principles of Quantum Mechanics 2nd ed. - R. Shankar"
+importance = 9
+description = "Auto-added by update_files.py from Attachments/TCD_books_JS/TP/Principles of Quantum Mechanics 2nd ed. - R. Shankar.pdf."
+urls = []
+tags = ["tcd_books_JS", "knowledge", "book", "TP"]
+checked = "No"
+files = ["Attachments/TCD_books_JS/TP/Principles of Quantum Mechanics 2nd ed. - R. Shankar.pdf"]
+platform = ""
+cost = ""
+date_editing = "2026-09-19"
+notes = ""

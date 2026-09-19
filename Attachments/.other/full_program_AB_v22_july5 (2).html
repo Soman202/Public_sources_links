@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Training Program — 8-Session Gym Cycle · v22 · July 5 2026</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:960px;margin:0 auto;padding:24px;background:#fff;color:#1a1a1a}
+  h1{font-size:22px;font-weight:700;margin-bottom:4px}
+  .subtitle{font-size:13px;color:#666;margin-bottom:20px}
+  .sl{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#999;margin:22px 0 8px}
+  /* Week grid */
+  .week-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:12px}
+  .day{border:1px solid #e5e5e5;border-radius:10px;padding:8px 6px;text-align:center}
+  .day-name{font-size:10px;font-weight:600;color:#999;margin-bottom:3px}
+  .day-type{font-size:11px;font-weight:600;margin-bottom:2px}
+  .day-note{font-size:10px;color:#888;line-height:1.3}
+  .tag{display:inline-block;font-size:9px;font-weight:600;padding:1px 6px;border-radius:5px;margin-bottom:3px}
+  .t-gym{background:#eef4fc;color:#2471a3}
+  .t-run{background:#eafaf1;color:#1e8449}
+  .t-row{background:#f0f0f0;color:#555}
+  /* Cycle table */
+  table.cycle{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+  table.cycle th{font-size:11px;font-weight:600;color:#888;padding:7px 10px;text-align:left;border-bottom:1px solid #eee;background:#fafafa}
+  table.cycle td{padding:8px 10px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+  table.cycle tr:last-child td{border-bottom:none}
+  .badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px}
+  .b-ct{background:#eef4fc;color:#2471a3}
+  .b-sl{background:#fef9e7;color:#7d6608}
+  .b-bb{background:#f0f0f0;color:#555}
+  .b-fb{background:#e1f5ee;color:#0f6e56}
+  .b-a{background:#eef4fc;color:#2471a3}
+  .b-b{background:#fef9e7;color:#7d6608}
+  /* AB split layout */
+  .ab-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  .ab-card{border:1px solid #e5e5e5;border-radius:12px;padding:14px 16px}
+  .ab-title{font-size:13px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .a-badge{background:#eef4fc;color:#2471a3;font-size:11px;font-weight:600;padding:2px 9px;border-radius:5px}
+  .b-badge{background:#fef9e7;color:#7d6608;font-size:11px;font-weight:600;padding:2px 9px;border-radius:5px}
+  .part-hdr{font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:4px;margin:8px 0 3px}
+  .part-ant{background:#fdebd0;color:#a04000}
+  .part-lat{background:#d5f5e3;color:#1e8449}
+  .part-pos{background:#e8daef;color:#6c3483}
+  .part-leg{background:#fef9e7;color:#7d6608}
+  .part-chest{background:#eef4fc;color:#2471a3}
+  .part-back{background:#e8f8f5;color:#0e6655}
+  .part-bi{background:#fdedec;color:#922b21}
+  .part-tri{background:#f5eef8;color:#7d3c98}
+  table.ex{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:3px}
+  table.ex th{font-size:10px;font-weight:600;color:#999;padding:3px 7px;text-align:left;border-bottom:1px solid #eee;background:#fafafa}
+  table.ex td{padding:5px 7px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+  table.ex tr:last-child td{border-bottom:none}
+  .w{color:#c0392b;font-weight:700}
+  /* Run box */
+  .run-card{border:1px solid #e5e5e5;border-radius:10px;padding:12px 14px;margin-bottom:8px}
+  .run-title{font-size:13px;font-weight:600;margin-bottom:4px}
+  .run-detail{font-size:12px;color:#555;line-height:1.6}
+  .verdict{border-radius:8px;padding:9px 13px;margin-bottom:7px;font-size:12px;line-height:1.6}
+  .v-info{background:#eef4fc;border-left:3px solid #2980b9;color:#1a5276}
+  .v-good{background:#eafaf1;border-left:3px solid #27ae60;color:#1e8449}
+  .v-warn{background:#fef9e7;border-left:3px solid #f39c12;color:#7d6608}
+  /* Progress */
+  .prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+  .prog-cell{background:#f7f7f5;border-radius:9px;padding:9px 12px}
+  .prog-label{font-size:10px;color:#888;margin-bottom:2px}
+  .prog-val{font-size:13px;font-weight:600;color:#111}
+  .prog-next{font-size:10px;color:#27ae60;margin-top:2px}
+  @media(max-width:700px){.ab-grid{grid-template-columns:1fr}.week-strip{grid-template-columns:repeat(4,1fr)}.prog-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<h1>Full Training Program</h1>
+<div class="subtitle">8-session gym cycle · v22 Jul 5, 2026 · RP revision: easy days rewritten as tight active recovery + deload protocol added · confirmed weights through Jul 4</div>
+
+<!-- FIXED WEEK -->
+<div class="sl">Fixed weekly structure — never changes</div>
+<div class="week-strip">
+  <div class="day" style="border-color:#2980b9"><div class="day-name">MON</div><div class="tag t-gym">Gym</div><div class="day-type" style="color:#2471a3">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day" style="border-color:#27ae60"><div class="day-name">TUE</div><div class="tag t-run">Run</div><div class="day-type" style="color:#1e8449">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day" style="border-color:#2980b9"><div class="day-name">WED</div><div class="tag t-gym">Gym</div><div class="day-type" style="color:#2471a3">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day" style="border-color:#27ae60"><div class="day-name">THU</div><div class="tag t-run">Run</div><div class="day-type" style="color:#1e8449">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day" style="border-color:#2980b9"><div class="day-name">FRI</div><div class="tag t-gym">Gym</div><div class="day-type" style="color:#2471a3">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day" style="border-color:#27ae60"><div class="day-name">SAT</div><div class="tag t-run">Run</div><div class="day-type" style="color:#1e8449">Rotating</div><div class="day-note">see cycle below</div></div>
+  <div class="day"><div class="day-name">SUN</div><div class="tag t-row">Recovery</div><div class="day-type" style="color:#555">Always fixed</div><div class="day-note">Row 30min HR&lt;130 + Sled 35kg + Walk</div></div>
+</div>
+
+<!-- GYM CYCLE -->
+<div class="sl">Gym cycle — 8 sessions before repeating</div>
+<table class="cycle">
+  <tr><th>#</th><th>Session</th><th>Ver.</th><th>Legs focus</th><th>Key exercises</th></tr>
+  <tr><td>G1</td><td><span class="badge b-ct">Chest+Tri+Legs</span></td><td><span class="badge b-a">A</span></td><td>XR.114 Hip Abductor + XR.115 Hip Adductor</td><td>Smith Machine · Cable Crossover · Machine Fly · Close-grip Bench · EZ-Bar Ext · Press-down</td></tr>
+  <tr><td>G2</td><td><span class="badge b-sl">Shoulders+Legs</span></td><td><span class="badge b-a">A</span></td><td>RDL + XR.108.1 Leg Curl</td><td>Face Pull · Cable Diagonal · Front Raise · Posterior Fly · XR.113 Lateral Raise · Straight Arm Front · High Cable Row</td></tr>
+  <tr><td>G3</td><td><span class="badge b-bb">Back+Bi+Legs</span></td><td><span class="badge b-a">A</span></td><td>Leg Press 90→110 kg</td><td>Wide-grip Pulldown · Close-grip Pulldown · Cable Row · Wide EZ Curl</td></tr>
+  <tr><td>G4</td><td><span class="badge b-fb">Easy Full Body</span></td><td><span class="badge b-a">A</span></td><td>Sissy Squat · XR.115 light — legs minimal (intervals next day)</td><td>XR.129 Press · Single-arm Row · band circuit ×1 · optional banded arms — <strong>tight ≤40 min active recovery</strong></td></tr>
+  <tr><td>G5</td><td><span class="badge b-ct">Chest+Tri+Legs</span></td><td><span class="badge b-b">B</span></td><td>Hip Thrust machine + Pendulum V-Squat</td><td>Barbell Bench · Suspension Fly · Incline DB Fly · Weighted Dips · Cable Overhead Tri · Machine Press-down</td></tr>
+  <tr><td>G6</td><td><span class="badge b-sl">Shoulders+Legs</span></td><td><span class="badge b-b">B</span></td><td>RDL + XR.108.1 Leg Curl</td><td>Seated Barbell Press · Suspension Face Pull · Bent-arm Lateral · DB Front Raise · Cable Diagonal · Cable Kick-back · High Cable Row</td></tr>
+  <tr><td>G7</td><td><span class="badge b-bb">Back+Bi+Legs</span></td><td><span class="badge b-b">B</span></td><td>Leg Press 100→121 kg</td><td>Weighted Chin-up +15kg · Machine #22 Pulldown 71kg · Seated DB Curl 18kg · T-bar Row · Alternating DB Curl 20kg</td></tr>
+  <tr><td>G8</td><td><span class="badge b-fb">Easy Full Body</span></td><td><span class="badge b-b">B</span></td><td>XR.107 light · Banded Glute Bridge — legs minimal</td><td>XR.128 Press · XR.112 Row · DB Lateral · TRX Rear Delt · XR.125 Dip — <strong>tight ≤45 min active recovery</strong></td></tr>
+</table>
+
+<!-- MACHINE INVENTORY -->
+<div class="sl">X-Line machine inventory — confirmed from photos · June 2026</div>
+<table class="cycle" style="font-size:11px">
+  <tr><th>Code</th><th>Russian name</th><th>English function</th><th>Muscle</th><th>Used in</th></tr>
+  <tr><td><strong>XR.107</strong></td><td>Разгибатель бедра</td><td>Leg Extension</td><td>Quads (seated extension)</td><td>G8B Easy</td></tr>
+  <tr><td><strong>XR.108.1</strong></td><td>Сгибатель бедра лежа</td><td>Lying Leg Curl</td><td>Hamstrings (lying curl)</td><td>G2A · G4A Easy</td></tr>
+  <tr><td><strong>XR.112</strong></td><td>Рычажная тяга</td><td>Lever Row</td><td>Mid-back / rhomboids</td><td>G8B Easy</td></tr>
+  <tr style="background:#fff8e7"><td><strong>XR.113 ⭐NEW</strong></td><td>Дельта машина</td><td>Lateral Raise machine</td><td>Lateral delts (seated)</td><td>G2A shoulder rotation #5</td></tr>
+  <tr><td><strong>XR.114</strong></td><td>Тренажер для отводящих мышц бедра</td><td>Hip Abductor</td><td>Outer thigh / glute med</td><td>G1A legs · G4A Easy</td></tr>
+  <tr style="background:#fff8e7"><td><strong>XR.115 ⭐NEW</strong></td><td>Тренажер для приводящих мышц бедра</td><td>Hip Adductor</td><td>Inner thigh</td><td>G1A legs</td></tr>
+  <tr><td><strong>XR.125</strong></td><td>Комбинированный станок с разгрузкой</td><td>Assisted Pull-up / Dip</td><td>Lats + Triceps (bodyweight)</td><td>G5B (dips) · G8B Easy</td></tr>
+  <tr><td><strong>XR.128</strong></td><td>Жим под углом вверх</td><td>Incline Chest Press</td><td>Upper chest (machine)</td><td>G4A Easy</td></tr>
+  <tr><td><strong>XR.129</strong></td><td>Жим горизонтальный</td><td>Horizontal Chest Press</td><td>Chest flat (machine)</td><td>G8B Easy</td></tr>
+  <tr><td><strong>XR.131</strong></td><td>Тренажер для ягодичных мышц (радиальный)</td><td>Glute Kickback (radial)</td><td>Glutes (standing arc)</td><td>G4A Easy · G8B Easy</td></tr>
+  <tr><td><strong>Machine #22</strong></td><td>Plate-loaded pulldown</td><td>Plate-loaded Incline Pulldown</td><td>Lats (bilateral, plate)</td><td>G7B</td></tr>
+  <tr><td><strong>Prof. Line</strong></td><td>Рычажная тяга (T-bar)</td><td>T-bar / Lever Row</td><td>Back thickness (plate)</td><td>G7B</td></tr>
+  <tr><td>Nordic attachment</td><td>Упор для нордик-керл</td><td>Nordic Curl (bench anchor)</td><td>Hamstrings eccentric</td><td>G6B — optional swap (not yet adopted)</td></tr>
+</table>
+
+<div class="sl">Garmin mislabel dictionary — full list</div>
+<table class="cycle" style="font-size:11px">
+  <tr><th>Garmin logs as</th><th>Actual machine / exercise</th></tr>
+  <tr><td>Weighted Reverse Hip Raise</td><td>XR.108.1 Lying Leg Curl</td></tr>
+  <tr><td>Weighted Modified Inverted Row / Weighted Suspended Inverted Row</td><td>High Cable Row</td></tr>
+  <tr><td>Banded Hip Extension</td><td>XR.114 Hip Abductor</td></tr>
+  <tr><td>Hip Extension machine</td><td>XR.114 Hip Abductor (G1A)</td></tr>
+  <tr><td>Weighted Inner-thigh Lift</td><td>XR.115 Hip Adductor</td></tr>
+  <tr><td>EZ-Bar Preacher Curl</td><td>XR.106 Seated Biceps Curl machine</td></tr>
+  <tr><td>Weighted Leg Extensions</td><td>XR.107 Leg Extension (G4A · G8B) OR XR.114 Hip Abductor (G1A) — same Garmin label, context determines which machine</td></tr>
+  <tr><td>Weighted Standing Rear-leg Raise</td><td>XR.131 Glute Kickback</td></tr>
+  <tr><td>Suspension Chest Press</td><td>XR.128 Incline Chest Press OR XR.129 Horizontal Chest Press (Garmin uses same label for both — check which machine was used)</td></tr>
+  <tr><td>Weighted Suspended Chin-up</td><td>Machine #22 Plate-loaded Pulldown</td></tr>
+  <tr><td>Plate Raises</td><td>Straight arm front raise on block</td></tr>
+  <tr><td>Bent-over Lateral Raise</td><td>XR.124.1 Rear Delt Fly (rear configuration)</td></tr>
+  <tr><td>High Pull Burpee</td><td>Suspension Inverted Row</td></tr>
+  <tr><td>Suspension Pull-up</td><td>Suspension Inverted Row (variant label)</td></tr>
+  <tr><td>Elevated Ring Row</td><td>Suspension Inverted Row (variant label)</td></tr>
+  <tr><td>Decline Ring Row</td><td>Suspension Push-up feet elevated</td></tr>
+  <tr><td>Bent-over Row with Barbell</td><td>T-bar / Lever Row</td></tr>
+  <tr style="background:#fff8e7"><td>Suspension Glute Bridge ⭐NEW</td><td>Hip Thrust machine (VERT plate-loaded, G5B)</td></tr>
+  <tr style="background:#fff8e7"><td>Weighted Squat Thrusts (Up-downs) ⭐NEW</td><td>Pendulum / V-Squat machine (Gala-Sport, G5B)</td></tr>
+  <tr style="background:#fff8e7"><td>Dumbbell Fly ⭐NEW</td><td>Incline Dumbbell Fly (G5B)</td></tr>
+  <tr><td>Bench Press</td><td>Barbell Bench — free bar (G5B)</td></tr>
+</table>
+
+<!-- DIFFERENTIATION MATRIX -->
+<div class="sl">Exercise differentiation — A vs B · no overlap in primary exercises per muscle · leg exercises may repeat between pairs (intentional for overload tracking)</div>
+<table class="cycle" style="font-size:12px">
+  <tr><th>Muscle</th><th>G1A exercises</th><th>G5B exercises</th><th>Principle</th></tr>
+  <tr><td><strong>Chest compound</strong></td><td>Smith Machine Bench</td><td>Barbell Bench Press</td><td>Smith guided vs free barbell</td></tr>
+  <tr><td><strong>Chest isolation</strong></td><td>Cable Crossover · Machine Fly</td><td>Suspension Fly · Incline DB Fly</td><td>Cable + machine vs suspension + free weight</td></tr>
+  <tr><td><strong>Triceps compound</strong></td><td>Close-grip Barbell Bench</td><td>Weighted Parallel Dips</td><td>Press vs bodyweight push</td></tr>
+  <tr><td><strong>Triceps isolation</strong></td><td>EZ-Bar Lying Extension · Crossover Push-down</td><td>Cable Overhead Extension · Machine Push-down</td><td>Free weight vs cable + machine</td></tr>
+  <tr><td><strong>Legs (chest sessions)</strong></td><td>XR.114 Hip Abductor + XR.115 Hip Adductor</td><td>Hip Thrust machine + Pendulum V-Squat</td><td>Machine hip isolation (A) vs Hip Thrust + Pendulum V-Squat compound (B) · intentional leg overlap is permitted</td></tr>
+</table>
+<table class="cycle" style="font-size:12px;margin-top:6px">
+  <tr><th>Muscle</th><th>G2A exercises</th><th>G6B exercises</th><th>Principle</th></tr>
+  <tr><td><strong>Shoulder compound</strong></td><td>—</td><td>Seated Barbell Press</td><td>B only has barbell compound</td></tr>
+  <tr><td><strong>Posterior delt</strong></td><td>Face Pull on block · Posterior Fly machine</td><td>Suspension Face Pull · Cable Kick-back</td><td>Cable+machine vs suspension+cable</td></tr>
+  <tr><td><strong>Lateral delt</strong></td><td>Cable Diagonal · Seated Lateral Raise machine</td><td>Bent-arm Lateral+ER · Cable Diagonal Raise</td><td>Machine (G2A) vs cable one-arm (G6B) — same family, different tools</td></tr>
+  <tr><td><strong>Anterior delt</strong></td><td>Front Raise on block · Straight arm front</td><td>Dumbbell Front Raise</td><td>Cable vs free weight</td></tr>
+  <tr><td><strong>Finisher</strong></td><td>High Cable Row (G2A)</td><td>High Cable Row (G6B)</td><td>Same finisher — consistent progressive overload</td></tr>
+  <tr><td><strong>Lateral delt</strong></td><td>XR.113 Lateral Raise machine · Cable Diagonal (bilateral)</td><td>Bent-arm Lateral+ER · Cable Diagonal Raise one arm</td><td>Machine + bilateral cable (G2A) vs DB + unilateral cable (G6B)</td></tr>
+  <tr><td><strong>Legs (shoulder sessions)</strong></td><td>RDL + XR.108.1 Lying Leg Curl</td><td>RDL + XR.108.1 Leg Curl</td><td>Same machine curl both weeks (Nordic Curl available as optional swap) · RDL shared (overload tracking)</td></tr>
+</table>
+<table class="cycle" style="font-size:12px;margin-top:6px">
+  <tr><th>Muscle</th><th>G3A exercises</th><th>G7B exercises</th><th>Principle</th></tr>
+  <tr><td><strong>Back width</strong></td><td>Wide-grip Cable Pulldown · Close-grip Pulldown</td><td>Weighted Chin-up · Machine #22 Pulldown</td><td>Cable machine vs bodyweight + plate-loaded</td></tr>
+  <tr><td><strong>Back thickness</strong></td><td>Wide-grip Cable Row</td><td>T-bar Lever Row</td><td>Cable row vs plate-loaded lever row</td></tr>
+  <tr><td><strong>Biceps</strong></td><td>Wide EZ-Bar Curl · XR.106 Machine Curl</td><td>Seated DB Curl · Alternating DB Curl</td><td>Barbell+machine vs dumbbell (unilateral)</td></tr>
+  <tr><td><strong>Legs</strong></td><td>Leg Press A: 90→115 kg</td><td>Leg Press B: 100→121 kg</td><td>Same exercise · different loading progression · intentional overload split</td></tr>
+</table>
+
+
+<div class="sl">Run cycle — 6 runs before repeating</div>
+<div class="run-card"><div class="run-title" style="color:#1e8449">R1 · R2 · R3 — Easy</div><div class="run-detail">8–10 km · HR &lt;140 bpm · 7:05–7:15 min/km · cadence &gt;185 spm · start at 7:10 from lap 1</div></div>
+<div class="run-card" style="border-color:#e74c3c"><div class="run-title" style="color:#c0392b">R4 — Intervals ⭐</div><div class="run-detail">Warm-up 10 min easy · 5×3 min at 165–175 bpm · 3 min easy jog recovery between reps · cool-down 10 min · ~45 min total</div></div>
+<div class="run-card"><div class="run-title" style="color:#1e8449">R5 — Easy</div><div class="run-detail">8–10 km · HR &lt;140 bpm</div></div>
+<div class="run-card" style="border-color:#2980b9"><div class="run-title" style="color:#2471a3">R6 — Long run ⭐</div><div class="run-detail">15 km current — Jul 4 debut · progressing to 18 km by Aug 29 (see Running Schedule for full ladder) · HR &lt;135 bpm · 7:15–7:30 min/km · the key VO₂max run of the cycle</div></div>
+
+<!-- CHEST + TRI + LEGS -->
+<div class="sl">Chest + Triceps + Legs — A &amp; B</div>
+<div class="ab-grid">
+  <div class="ab-card">
+    <div class="ab-title"><span class="a-badge">A</span> Smith · Chest→Tri→Chest→Tri blocks</div>
+    <div class="part-hdr part-leg">🦵 Legs — glute + adductor (first)</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>XR.114 Hip Abductor ⭐ <span style="font-size:10px;color:#888">(Garmin: Hip Extension machine / Banded Hip Extension)</span></td><td>3</td><td class="w">76 kg</td><td>25–35</td></tr>
+      <tr><td>XR.115 Hip Adductor ⭐ <span style="font-size:10px;color:#888">(Garmin: Weighted Inner-thigh Lift)</span></td><td>3</td><td class="w">41 kg</td><td>25–35</td></tr>
+    </table>
+    <div class="part-hdr part-chest">💪 Chest block 1</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Smith Machine Bench — feeder</td><td>1</td><td class="w">50 kg</td><td>15</td></tr>
+      <tr><td>Smith Machine Bench — work ⭐</td><td>3</td><td class="w">72 kg</td><td>12–14</td></tr>
+      <tr><td>Cable Crossover</td><td>3</td><td class="w">28–30 kg</td><td>13–15</td></tr>
+    </table>
+    <div class="part-hdr part-tri">🔱 Triceps block 1</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Close-grip Barbell Bench ⭐</td><td>3</td><td class="w">56 kg</td><td>13–15</td></tr>
+      <tr><td>Lying EZ-Bar Extension — work</td><td>3</td><td class="w">32 kg</td><td>14–15</td></tr>
+    </table>
+    <div class="part-hdr part-chest">💪 Chest block 2</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>XR.124.1 Chest Fly ⭐ <span style="font-size:10px;color:#888">(front position — same machine as G2A rear delt fly)</span></td><td>3</td><td class="w">37.5 kg</td><td>13–15</td></tr>
+    </table>
+    <div class="part-hdr part-tri">🔱 Triceps block 2</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Triceps Press-down (crossover)</td><td>3</td><td class="w">54 kg</td><td>15</td></tr>
+    </table>
+  </div>
+  <div class="ab-card">
+    <div class="ab-title"><span class="b-badge">B</span> Barbell · Chest→Tri→Chest→Tri blocks</div>
+    <div class="part-hdr part-leg">🦵 Legs — glute + posterior (first)</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>Hip Thrust machine ⭐ <span style="font-size:10px;color:#888">VERT plate-loaded · pyramid · Garmin: Suspension Glute Bridge</span></td><td>3</td><td class="w">15→25→35 kg</td><td>3×15</td></tr>
+      <tr><td>Pendulum / V-Squat machine ⭐ <span style="font-size:10px;color:#888">Gala-Sport plate-loaded · Garmin: Weighted Squat Thrusts (Up-downs)</span></td><td>3</td><td class="w">50 kg</td><td>16</td></tr>
+    </table>
+    <div class="part-hdr part-chest">💪 Chest block 1</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Barbell Bench Press — feeder</td><td>1</td><td class="w">60 kg</td><td>12</td></tr>
+      <tr><td>Barbell Bench Press — work ⭐</td><td>3</td><td class="w">87.5 kg</td><td>12–14</td></tr>
+      <tr><td>Suspension Chest Fly</td><td>3</td><td class="w">40 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-tri">🔱 Triceps block 1</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Weighted Parallel Dips (XR.125) ⭐ <span style="font-size:10px;color:#e67e22">BW → add weight belt</span></td><td>4</td><td class="w">BW+</td><td>12–15</td></tr>
+      <tr><td>Cable Overhead Triceps Extension</td><td>4</td><td class="w">58 kg</td><td>14–16</td></tr>
+    </table>
+    <div class="part-hdr part-chest">💪 Chest block 2</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Incline Dumbbell Fly ⭐ <span style="font-size:10px;color:#888">Garmin: Dumbbell Fly</span></td><td>3</td><td class="w">20 kg</td><td>12–14</td></tr>
+    </table>
+    <div class="part-hdr part-tri">🔱 Triceps block 2</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Triceps Press-down (triceps machine)</td><td>4</td><td class="w">26 kg</td><td>13</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- SHOULDERS + LEGS -->
+<div class="sl">Shoulders + Legs — A &amp; B · interleaved rotation · 4 rounds × 6 exercises</div>
+<div class="verdict v-info" style="font-size:12px;padding:.6rem 1rem;margin-bottom:10px">Do exercises in order listed · complete 1 set each then repeat · rest 60s between exercises · 90s before starting next round · saves ~25 min vs sequential · each muscle recovers while others work</div>
+<div class="ab-grid">
+  <div class="ab-card">
+    <div class="ab-title"><span class="a-badge">A</span> Block cable isolation · posterior first</div>
+    <div class="part-hdr part-leg">🦵 Legs first (before shoulder rotation)</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>Romanian Deadlift — feeder</td><td>1</td><td class="w">60 kg</td><td>15</td></tr>
+      <tr><td>Romanian Deadlift — work ⭐</td><td>3</td><td class="w">82 kg</td><td>15</td></tr>
+      <tr><td>Lying Leg Curl (XR.108.1)</td><td>3</td><td class="w">31 kg</td><td>20–22</td></tr>
+    </table>
+    <div class="part-hdr" style="background:#e0e7ff;color:#3730a3;margin-top:10px">🔄 Shoulder rotation — 4 rounds in this order</div>
+    <table class="ex">
+      <tr><th>Order</th><th>Exercise</th><th>Part</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td style="font-weight:600;color:#6c3483">1</td><td>Face Pull on block ⭐</td><td style="font-size:10px;color:#6c3483">⬇ Post</td><td class="w">56 kg</td><td>12–13</td></tr>
+      <tr><td style="font-weight:600;color:#1e8449">2</td><td>Cable Diagonal Raise</td><td style="font-size:10px;color:#1e8449">↔ Lat</td><td class="w">10 kg</td><td>12–13</td></tr>
+      <tr><td style="font-weight:600;color:#a04000">3</td><td>Front Raise on block (from chest)</td><td style="font-size:10px;color:#a04000">⬆ Ant</td><td class="w">40 kg</td><td>13–15</td></tr>
+      <tr><td style="font-weight:600;color:#6c3483">4</td><td>XR.124.1 Rear Delt Fly (rear position)</td><td style="font-size:10px;color:#6c3483">⬇ Post</td><td class="w">40 kg</td><td>12–13</td></tr>
+      <tr><td style="font-weight:600;color:#1e8449">5</td><td>XR.113 Lateral Raise machine (Дельта)</td><td style="font-size:10px;color:#1e8449">↔ Lat</td><td class="w">27 kg</td><td>13–15</td></tr>
+      <tr><td style="font-weight:600;color:#a04000">6</td><td>Raise straight arm front on block</td><td style="font-size:10px;color:#a04000">⬆ Ant</td><td class="w">36 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr" style="background:#e8f8f5;color:#0e6655;margin-top:10px">🏁 Finisher — after 4 rounds</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>High Cable Row ⭐</td><td>4</td><td class="w">67 kg</td><td>13–15</td></tr>
+    </table>
+  </div>
+  <div class="ab-card">
+    <div class="ab-title"><span class="b-badge">B</span> Compound press + suspension · posterior first</div>
+    <div class="part-hdr part-leg">🦵 Legs first (before shoulder rotation)</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>Romanian Deadlift — feeder</td><td>1</td><td class="w">60 kg</td><td>15</td></tr>
+      <tr><td>Romanian Deadlift — work ⭐</td><td>3</td><td class="w">82 kg</td><td>15</td></tr>
+      <tr><td>XR.108.1 Lying Leg Curl <span style="font-size:10px;color:#888">Garmin: Weighted Reverse Hip Raise · Nordic Curl optional swap to differentiate from G2A</span></td><td>3</td><td class="w">31 kg</td><td>20–22</td></tr>
+    </table>
+    <div class="part-hdr" style="background:#e0e7ff;color:#3730a3;margin-top:10px">🔄 Shoulder rotation — 4 rounds in this order</div>
+    <table class="ex">
+      <tr><th>Order</th><th>Exercise</th><th>Part</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td style="font-weight:600;color:#2471a3">1</td><td>Seated Barbell Shoulder Press (from chest) ⭐</td><td style="font-size:10px;color:#a04000">⬆ Ant</td><td class="w">46 kg</td><td>13–17</td></tr>
+      <tr><td style="font-weight:600;color:#6c3483">2</td><td>Suspension Face Pull (top block) ⭐</td><td style="font-size:10px;color:#6c3483">⬇ Post</td><td class="w">65 kg</td><td>14–18</td></tr>
+      <tr><td style="font-weight:600;color:#1e8449">3</td><td>Bent-arm Lateral Raise &amp; External Rotation</td><td style="font-size:10px;color:#1e8449">↔ Lat</td><td class="w">10 kg</td><td>13</td></tr>
+      <tr><td style="font-weight:600;color:#a04000">4</td><td>Dumbbell Front Raise</td><td style="font-size:10px;color:#a04000">⬆ Ant</td><td class="w">12 kg</td><td>13–15</td></tr>
+      <tr><td style="font-weight:600;color:#1e8449">5</td><td>Cable Diagonal Raise — one arm</td><td style="font-size:10px;color:#1e8449">↔ Lat</td><td class="w">10 kg</td><td>13–15</td></tr>
+      <tr><td style="font-weight:600;color:#6c3483">6</td><td>Cable pull Kick-back (rear delt)</td><td style="font-size:10px;color:#6c3483">⬇ Post</td><td class="w">10 kg</td><td>13–15</td></tr>
+    </table>
+    <div class="part-hdr" style="background:#e8f8f5;color:#0e6655;margin-top:10px">🏁 Finisher — after 4 rounds</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>High Cable Row ⭐</td><td>4</td><td class="w">68 kg</td><td>13–15</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- BACK + BI + LEGS -->
+<div class="sl">Back + Biceps + Legs — A &amp; B · confirmed weights from sessions</div>
+<div class="ab-grid">
+  <div class="ab-card">
+    <div class="ab-title"><span class="a-badge">A</span> Cable pulldown + row · Back→Bi→Back→Bi blocks</div>
+    <div class="part-hdr part-leg">🦵 Leg Press — quad (first)</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>Leg Press — feeder</td><td>1</td><td class="w">90 kg</td><td>20</td></tr>
+      <tr><td>Leg Press — work</td><td>2</td><td class="w">100 kg</td><td>20</td></tr>
+      <tr><td>Leg Press — top ⭐</td><td>2</td><td class="w">115 kg</td><td>20–25</td></tr>
+    </table>
+    <div class="part-hdr part-back" style="background:#e8f8f5;color:#0e6655">🏋 Back block 1 — width</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Wide-grip Lat Pull-down — feeder</td><td>1</td><td class="w">45 kg</td><td>12</td></tr>
+      <tr><td>Wide-grip Lat Pull-down — work ⭐</td><td>4</td><td class="w">82 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-bi" style="background:#fdedec;color:#922b21">💪 Biceps block 1 — wide grip</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Wide-grip EZ-Bar Curl ⭐</td><td>4</td><td class="w">36 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-back" style="background:#e8f8f5;color:#0e6655">🏋 Back block 2 — thickness</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Wide-grip Seated Cable Row ⭐</td><td>4</td><td class="w">76 kg</td><td>12–13</td></tr>
+      <tr><td>Close-grip Lat Pull-down</td><td>4</td><td class="w">78 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-bi" style="background:#fdedec;color:#922b21">💪 Biceps block 2 — machine curl</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Seated Biceps Curl (XR.106 machine) ⭐</td><td>4</td><td class="w">25 kg</td><td>13–15</td></tr>
+    </table>
+  </div>
+  <div class="ab-card">
+    <div class="ab-title"><span class="b-badge">B</span> Chin-up · Plate-loaded · Back→Bi→Back→Bi blocks</div>
+    <div class="part-hdr part-leg">🦵 Leg Press — heavier progression</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>GHD Back Extensions</td><td>3</td><td>BW</td><td>20</td></tr>
+      <tr><td>Leg Press — feeder</td><td>1</td><td class="w">100 kg</td><td>20</td></tr>
+      <tr><td>Leg Press — work</td><td>2</td><td class="w">110 kg</td><td>20</td></tr>
+      <tr><td>Leg Press — top ⭐</td><td>2</td><td class="w">121 kg</td><td>15–20</td></tr>
+    </table>
+    <div class="part-hdr part-back" style="background:#e8f8f5;color:#0e6655">🏋 Back block 1 — compound pull</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Weighted Chin-up ⭐ (+15 kg added)</td><td>4</td><td class="w">+15 kg</td><td>5–6</td></tr>
+      <tr><td>Plate-loaded Incline Pulldown #22 — both arms ⭐</td><td>4</td><td class="w">71 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-bi" style="background:#fdedec;color:#922b21">💪 Biceps block 1 — seated</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Seated Dumbbell Biceps Curl</td><td>4</td><td class="w">18 kg</td><td>12</td></tr>
+    </table>
+    <div class="part-hdr part-back" style="background:#e8f8f5;color:#0e6655">🏋 Back block 2 — plate-loaded row</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>T-bar / Professional Line Lever Row ⭐</td><td>4</td><td class="w">60 kg</td><td>12–13</td></tr>
+    </table>
+    <div class="part-hdr part-bi" style="background:#fdedec;color:#922b21">💪 Biceps block 2 — alternating</div>
+    <table class="ex"><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr>
+      <tr><td>Alternating Dumbbell Biceps Curl</td><td>4</td><td class="w">20 kg</td><td>11–14</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- EASY FULL BODY -->
+<div class="sl">Active Recovery — Session G4 (Version A) · ≤40 min HARD CAP · precedes intervals</div>
+<div class="verdict v-warn" style="font-size:12px;padding:.6rem 1rem;margin-bottom:10px"><strong>Purpose: prime movement + blood flow for tomorrow's intervals — NOT accumulate volume.</strong> 2 sets max, RPE 5–6, leave 3–4 reps in reserve (RIR 3–4), HR &lt;115. No overload attempts, no failure, no extra sets or rounds. Legs stay minimal so they are fresh for intervals. Timer ≤40 min, then stop. <em>(Replaces the old 43-set / 117-min version — that was a second hypertrophy session, not recovery.)</em></div>
+<table class="ex" style="max-width:750px">
+  <tr><th>Exercise</th><th>Sets</th><th>Load</th><th>Reps</th><th>Rest</th><th>Note</th></tr>
+  <tr><td>GHD Back Extensions</td><td>2</td><td>BW</td><td>12</td><td>45s</td><td>Light activation</td></tr>
+  <tr><td>Zercher / Machine (sissy) Squat</td><td>2</td><td class="muted">BW</td><td>12</td><td>45s</td><td>Pattern + blood flow only</td></tr>
+  <tr><td>XR.115 Hip Adductor — light</td><td>2</td><td class="w">~30 kg</td><td>15</td><td>45s</td><td>Sub-max — NOT the 41 kg × 35 work-day grind</td></tr>
+  <tr><td>XR.129 Horizontal Chest Press</td><td>2</td><td class="w">40 kg</td><td>12</td><td>60s</td><td>Moderate · RIR 4</td></tr>
+  <tr><td>Single-arm Cable Row</td><td>2</td><td class="w">25 kg</td><td>12 each</td><td>60s</td><td>Light back maintenance</td></tr>
+  <tr><td colspan="6" style="font-size:10px;color:#888;padding:4px 7px;background:#fafafa;font-style:italic">Shoulders — ONE round only (not 3)</td></tr>
+  <tr><td>Banded Pull-apart → Abduction → Front Raise</td><td>1 round</td><td>light band</td><td>15 each</td><td>30s</td><td>Cuff + delt blood flow</td></tr>
+  <tr><td colspan="6" style="font-size:10px;color:#888;padding:4px 7px;background:#fafafa;font-style:italic">Arms — optional, skip if at time cap</td></tr>
+  <tr><td>Banded Biceps Curl + Triceps Extension</td><td>1 each</td><td>light band</td><td>20</td><td>30s</td><td>Optional pump</td></tr>
+</table>
+
+<div class="sl">Active Recovery — Session G8 (Version B) · ≤45 min HARD CAP · precedes intervals</div>
+<div class="verdict v-warn" style="font-size:12px;padding:.6rem 1rem;margin-bottom:10px"><strong>Purpose: movement quality + blood flow before intervals — NOT volume.</strong> 2 sets max, RPE 5–6, RIR 3–4, HR &lt;115. No overload attempts, no failure. Distinct exercises from G4A. Timer ≤45 min, then stop. <em>(Replaces the old ~17-exercise version.)</em></div>
+<table class="ex" style="max-width:750px">
+  <tr><th>Exercise</th><th>Sets</th><th>Load</th><th>Reps</th><th>Rest</th><th>Note</th></tr>
+  <tr><td>GHD Back Extensions</td><td>2</td><td>BW</td><td>12</td><td>45s</td><td>Light activation</td></tr>
+  <tr><td>XR.107 Leg Extension — light</td><td>2</td><td class="w">~40 kg</td><td>15</td><td>45s</td><td>Sub-max quad flush — not 75 kg × 30</td></tr>
+  <tr><td>Banded Glute Bridge</td><td>2</td><td>light band</td><td>15</td><td>45s</td><td>Glute activation, floor</td></tr>
+  <tr><td>XR.128 Incline Chest Press</td><td>2</td><td class="w">40 kg</td><td>12</td><td>60s</td><td>Moderate · RIR 4</td></tr>
+  <tr><td>XR.112 Lever Row</td><td>2</td><td class="w">40 kg</td><td>12</td><td>60s</td><td>Mid-back · RIR 4</td></tr>
+  <tr><td>Dumbbell Lateral Raise</td><td>2</td><td class="w">8–10 kg</td><td>15</td><td>45s</td><td>Light lateral delt</td></tr>
+  <tr><td>TRX Rear Delt Fly</td><td>2</td><td>BW</td><td>15</td><td>45s</td><td>Rear delt · posture</td></tr>
+  <tr><td>XR.125 Dip — sub-max</td><td>2</td><td class="muted">BW</td><td>12</td><td>60s</td><td>Stop 3–4 short, NOT to failure</td></tr>
+</table>
+
+<div class="sl">Deload Week — every 4–6 weeks (align with the running cutback week)</div>
+<div class="verdict v-star" style="font-size:12px;padding:.6rem 1rem;margin-bottom:10px"><strong>Why:</strong> the recurring set-3 / round-4 drops (Smith bench, chin-up, T-bar row) are accumulated-fatigue markers, not strength ceilings — a planned deload lets them rebound. Your running already cuts back every 4th long run; run the gym deload in the <strong>same</strong> week for one systemic recovery week. <strong>Next: week of Sat Jul 18 (R37 cutback 12 km).</strong></div>
+<table class="ex" style="max-width:750px">
+  <tr><th>Exercise type</th><th>Sets</th><th>Load</th><th>Effort</th></tr>
+  <tr><td>Main compounds (bench · RDL · leg press · OHP · chin-up · rows)</td><td>2 <span class="muted">(halved)</span></td><td>−10% or same</td><td>Stop 3–4 reps short · RIR 3–4</td></tr>
+  <tr><td>Isolation / accessory</td><td>1</td><td>same or lighter</td><td>RIR 3–4 · never to failure</td></tr>
+  <tr><td>Shoulder rotation</td><td>2 rounds <span class="muted">(not 4)</span></td><td>same</td><td>RIR 3–4</td></tr>
+  <tr><td>Finishers &amp; 2nd isolation blocks</td><td colspan="3" style="color:#c0392b;font-weight:700">DROP entirely this week</td></tr>
+  <tr><td>Easy days (G4A / G8B)</td><td colspan="3" style="color:#c0392b;font-weight:700">Full rest or a walk only — no gym</td></tr>
+</table>
+<div class="verdict v-info" style="font-size:12px;padding:.6rem 1rem;margin-bottom:10px"><strong>Rules:</strong> no overload attempts, no PRs, no reps to failure — the point is fatigue dissipation. Cap each session ≤45 min. <strong>After the deload week, resume at your PRE-deload working weights (not a reset)</strong> — expect the stalled top sets to break on the rebound.</div>
+
+<!-- PROGRESSIVE OVERLOAD -->
+<div class="sl">Progressive overload — add weight when you hit top of rep range with 2 reps left</div>
+<div class="prog-grid">
+  <div class="prog-cell"><div class="prog-label">Leg Press (A) top set</div><div class="prog-val">115 kg × 25</div><div class="prog-next">→ +1 kg when 2×25 clean</div></div>
+  <div class="prog-cell"><div class="prog-label">Leg Press (B) top set</div><div class="prog-val">121 kg × 15–20</div><div class="prog-next">→ +1 kg when 2×20 clean · advanced from 120 (2×21) Jun 15</div></div>
+  <div class="prog-cell"><div class="prog-label">Romanian Deadlift</div><div class="prog-val">82 kg × 15</div><div class="prog-next">→ 83 kg when 3×15 clean · Jun 24 set 3 = 14, hold 82</div></div>
+  <div class="prog-cell"><div class="prog-label">Smith Bench (Chest A)</div><div class="prog-val">72 kg × 14</div><div class="prog-next">→ +1 kg when 3×14 clean</div></div>
+  <div class="prog-cell"><div class="prog-label">Barbell Bench (Chest B) ⭐</div><div class="prog-val">87.5 kg × 12–14</div><div class="prog-next">→ 88.5 kg when 3×14 clean · 14·12·13 Jul 1</div></div>
+  <div class="prog-cell"><div class="prog-label">XR.114 Hip Abductor (A)</div><div class="prog-val">76 kg × 35</div><div class="prog-next">→ +1 kg when 3×35 clean · advanced from 75 Jun 22</div></div>
+  <div class="prog-cell"><div class="prog-label">Seated Barbell Press (B)</div><div class="prog-val">47 kg × 13–17</div><div class="prog-next">→ +1 kg when R1 hits 17 · advanced from 46 (R1 17) Jul 3</div></div>
+  <div class="prog-cell"><div class="prog-label">EZ-Bar Triceps Ext. (A)</div><div class="prog-val">32 kg × 14–15</div><div class="prog-next">→ +1 kg when 3×15 clean · advanced from 31 Jun 22</div></div>
+  <div class="prog-cell"><div class="prog-label">Triceps Press-down (machine B) ⭐</div><div class="prog-val">26 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean · updated Jun 8</div></div>
+  <div class="prog-cell"><div class="prog-label">Triceps Press-down (crossover A)</div><div class="prog-val">54 kg × 15</div><div class="prog-next">→ +1 kg when 3×15 clean · advanced from 53 Jun 22</div></div>
+  <div class="prog-cell"><div class="prog-label">Lat Pull-down (A)</div><div class="prog-val">82 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean · advanced from 81 Jun 26</div></div>
+  <div class="prog-cell"><div class="prog-label">Weighted Chin-up (B)</div><div class="prog-val">+15 kg × 6</div><div class="prog-next">→ +1 kg when 4×6 clean</div></div>
+  <div class="prog-cell"><div class="prog-label">Wide EZ-Bar Curl (A)</div><div class="prog-val">36 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean</div></div>
+  <div class="prog-cell"><div class="prog-label">Close-grip Bench (B)</div><div class="prog-val">55 kg × 13</div><div class="prog-next">→ +1 kg when 3×13 clean (set 3 dropped to 12 Jun 8)</div></div>
+  <div class="prog-cell"><div class="prog-label">XR.106 Preacher Curl (A)</div><div class="prog-val">25 kg × 15</div><div class="prog-next">→ +1 kg when 4×15 clean</div></div>
+  <div class="prog-cell"><div class="prog-label">Machine #22 Pulldown (B)</div><div class="prog-val">71 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean · advanced from 70 Jun 15</div></div>
+  <div class="prog-cell"><div class="prog-label">T-bar Row (B)</div><div class="prog-val">60 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean · Jun 15 set 4 = 10, hold</div></div><div class="prog-cell"><div class="prog-label">XR.115 Hip Adductor (A · G4A)</div><div class="prog-val">41 kg × 35</div><div class="prog-next">→ +1 kg when 3×35 clean · advanced from 40 Jun 22/29</div></div><div class="prog-cell"><div class="prog-label">XR.113 Lateral Raise (A)</div><div class="prog-val">27 kg × 13–15</div><div class="prog-next">→ +1 kg when 4×13 clean · advanced from 26 Jun 24</div></div><div class="prog-cell"><div class="prog-label">High Cable Row · A 67 / B 68</div><div class="prog-val">A 67 · B 68 kg</div><div class="prog-next">B → 69 when 4×15 clean (4×15 Jul 3) · A → 68 when 4×15 (66→67 Jun 24)</div></div><div class="prog-cell"><div class="prog-label">XR.108.1 Lying Leg Curl (A)</div><div class="prog-val">31 kg × 20–22</div><div class="prog-next">→ 32 kg when 3×22 clean</div></div><div class="prog-cell"><div class="prog-label">Wide Cable Row (A)</div><div class="prog-val">76 kg × 13</div><div class="prog-next">→ +1 kg when 4×13 clean · advanced from 75 Jun 26</div></div><div class="prog-cell"><div class="prog-label">Seated DB Curl (B)</div><div class="prog-val">18 kg × 12</div><div class="prog-next">→ 20 kg when 4×12 clean (skip 19) · advanced from 16 Jun 15</div></div><div class="prog-cell"><div class="prog-label">Alternating DB Curl (B)</div><div class="prog-val">20 kg × 11–14</div><div class="prog-next">→ 22 kg when 4×14 clean · advanced from 18 Jun 15</div></div><div class="prog-cell"><div class="prog-label">Incline DB Fly (B)</div><div class="prog-val">20 kg × 12–14</div><div class="prog-next">→ 22 kg when 3×14 clean · confirmed 18 (17·15·14) Jul 1</div></div><div class="prog-cell"><div class="prog-label">Hip Thrust top set (B)</div><div class="prog-val">35 kg × 15</div><div class="prog-next">raised from 30 (30×18 Jul 1) · +plate when 3×15 clean</div></div>
+</div>
+
+</body>
+</html>

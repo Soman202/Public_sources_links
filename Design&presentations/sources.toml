@@ -1,0 +1,3 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = []

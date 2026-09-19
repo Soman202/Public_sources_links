@@ -1,0 +1,32 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = []
+
+[[source]]
+id = "ultimate-web-scraper"
+title = "Ultimate Web Scraper"
+importance=6
+description = "If payed - automatic text and image Scraper from the websites including text, image or other elements. Could be connected directly to Claud, GPT and even MCP (claud code, cursor, copilot)"
+urls = ["https://ultimatewebscraper.com/", "https://github.com/ArthurSav/ultimate-web-scraper"]
+tags = ["CS_web", "tool"]
+checked = "No"
+files = []
+platform = "tool"
+cost = "$60 per year (10,000 cloud credits)"
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "simplescraper"
+title = "Simplescraper"
+importance=6
+description = "Only text, limited free, has API key, so could be called directly using REST."
+urls = ["https://simplescraper.io/"]
+tags = ["CS_web", "tool"]
+checked = "No"
+files = []
+platform = "tool"
+cost = "$39 per month (6,00 cloud credits)"
+date_editing = "2026-09-05"
+notes = ""
+

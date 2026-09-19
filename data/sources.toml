@@ -1,0 +1,13 @@
+[[source]]
+id = "W7-dat-ptb--0516L7"
+title = "PTB-XL, a large publicly available electrocardiography dataset"
+importance = 7
+description = "A dataset (3 GB) of electrocardiography for variety of ages and additional information such as age, sex, height, weight, nurse, site, device and recording_date"
+urls = ["https://physionet.org/content/ptb-xl/1.0.3/"]
+tags = ["data", "health"]
+checked = "first look"
+files = []
+platform = "website"
+cost = "free"
+date_editing = "2026-09-15"
+notes = ""

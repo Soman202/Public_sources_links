@@ -1,0 +1,171 @@
+# Schema: see scripts/lib.py (SOURCE_FIELD_ORDER) for the full field list.
+# Optional folder-level notes not tied to one link
+general_notes = []
+
+[[source]]
+id = "coding-interview-university"
+title = "coding-interview-university"
+importance=6
+description = "A complete course of software engineering that person followed for a few month and ended up in Amazon (also had interviewed by Google)"
+urls = ["https://github.com/jwasham/coding-interview-university"]
+tags = ["CS", "CS_web", "knowledge"]
+checked = "No"
+files = []
+platform = "github"
+cost = ""
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "system-design-primer"
+title = "system-design-primer"
+importance=2
+description = "A system design educational repo with anki flashcards for space repetition (?good for AI era as any prompt need a good structure and system design?)."
+urls = ["https://github.com/donnemartin/system-design-primer"]
+tags = ["CS", "CS_systems", "free", "knowledge"]
+checked = "No"
+files = []
+platform = "github"
+cost = "free"
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "full-stack-open"
+title = "Full Stack Open"
+importance=8
+description = "THis is an open cource on Full stack web development from Uni of Helsinki and solutions (by someone in GitHub)"
+urls = ["https://www.helsinki.fi/en/admissions-and-education/open-university/multidisciplinary-themed-modules/full-stack", "https://github.com/jarvensivu/full-stack-open"]
+tags = ["CS_web", "free", "knowledge"]
+checked = "No"
+files = []
+platform = ""
+cost = ""
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "the-missing-semester-of-your-cs-education-mit"
+title = "The Missing Semester of Your CS Education (MIT)"
+importance=4
+description = "A short course on the things that are usefull but usualy skipped during the education. Git managment, packaging, agentic coding, debugging, development and else."
+urls = ["https://missing.csail.mit.edu/"]
+tags = ["CS", "free", "knowledge"]
+checked = "No"
+files = []
+platform = ""
+cost = ""
+date_editing = "2026-09-05"
+notes = ""
+
+[[source]]
+id = "W4-ml-mach-CKOPLB"
+title = "Machine Learning Crash Course"
+importance = 4
+description = "Text tutorials from Google with diverge fields. Starting from basic quickly progress to the advance staff. The path is roughly linear regresion -> data -> NN & LLM -> real world"
+urls = ["https://developers.google.com/machine-learning/crash-course"]
+tags = ["ML", "LLM", "knowledge", "curriculum", "CS"]
+checked = "first look"
+files = []
+platform = "web"
+cost = "free"
+date_editing = "2026-09-05"
+notes = "certificate"
+
+[[source]]
+id = "W6-ml-ibm-7O91MS"
+title = "IBM Data Science Professional Certificate"
+importance = 6
+description = "Generic course of Machine Learning from IBM"
+urls = ["https://www.coursera.org/professional-certificates/ibm-data-science"]
+tags = ["ML", "LLM", "knowledge", "curriculum", "CS"]
+checked = "No"
+files = []
+platform = "web"
+cost = "free"
+date_editing = "2026-09-05"
+notes = "certificate"
+
+[[source]]
+id = "W6-cyb-gett-D0EPM9"
+title = "Getting into cyber security"
+importance = 6
+description = "CyberSec courses by Cisco. Has multiple levels and depth, with cybersec essentials in 30 hours."
+urls = ["https://www.cisco.com/c/m/en_emear/campaigns/security/cybersecurity-essentials.html", "https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=en-US"]
+tags = ["cybersec", "knowledge", "curriculum", "CS"]
+checked = "No"
+files = []
+platform = "web"
+cost = "free"
+date_editing = "2026-09-05"
+notes = "certificate"
+
+[[source]]
+id = "W8-cs-cs50-SEM1LW"
+title = "CS50 Harvard computer science cource"
+importance = 8
+description = "A generic course on computer sience of introduction level."
+urls = ["https://pll.harvard.edu/course/cs50-introduction-computer-science"]
+tags = ["CS", "knowledge", "curriculum"]
+checked = "No"
+files = []
+platform = "web"
+cost = "free"
+date_editing = "2026-09-06"
+notes = ""
+
+[[source]]
+id = "W3-ml-pinn-VYBMFR"
+title = "PINN (Physics-informed neural networks)"
+importance = 3
+description = "Neural networks with encoded in them Physics. This is a very interesting and important topic for me as a physisist."
+urls = ["https://habr.com/ru/articles/748538/"]
+tags = ["ML", "ML_model", "knowledge"]
+checked = "No"
+files = []
+platform = "post"
+cost = "free"
+date_editing = "2026-09-15"
+notes = "4 min to read"
+
+[[source]]
+id = "W5-cs-kagg-WWADH1"
+title = "Kaggle Learn"
+importance = 5
+description = "A website with dozens of free cources. Especial interest to Ai agents, ML cources etc."
+urls = ["https://www.kaggle.com/learn"]
+tags = ["CS", "ML", "LLM", "knowledge"]
+checked = "No"
+files = []
+platform = "website"
+cost = "free"
+date_editing = "2026-09-15"
+notes = ""
+
+[[source]]
+id = "W6-cs-spec-62F39U"
+title = "Spec-Driven Development with Coding Agents"
+importance = 6
+description = "Jet Brain reccomended course on AI agents."
+urls = ["https://www.deeplearning.ai/courses/spec-driven-development-with-coding-agents?map=2&mkt_tok=NDI2LVFWRC0xMTQAAAGh3yMcYCjxOu_OBzZ4LZgLPxjX8bMCSeJzMy3_tRlo7KTbyah9QMqf3f_wY1thLvEP7bMMm2zM2Tpp0qyVDhYFDyDFe_0GIYG07g_RjJppNSVDmamg"]
+tags = ["CS", "ML", "LLM", "knowledge"]
+checked = "No"
+files = []
+platform = "website"
+cost = "free"
+date_editing = "2026-09-15"
+notes = ""
+
+[[source]]
+id = "W6-cs-pyth-AR2Q3K"
+title = "Python: Mastering Pandas Essentials"
+importance = 6
+description = "Jet Brain reccomended course on mastering pandas. I need it for my own code improoving skills."
+urls = ["https://www.coursera.org/learn/jb-python-mastering-pandas-essentials"]
+tags = ["CS", "ML", "knowledge"]
+checked = "No"
+files = []
+platform = "coursera"
+cost = "free"
+date_editing = "2026-09-15"
+notes = ""
