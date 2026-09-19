@@ -6,7 +6,7 @@
   "scripts": {
     "schema": "uv run python scripts/gen-schema.py",
     "dev": "npm run schema && vite",
-    "build": "npm run schema && tsc -b && vite build",
+    "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "check": "uv run python scripts/gen-schema.py --check && vitest run"
