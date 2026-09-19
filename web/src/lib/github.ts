@@ -24,8 +24,8 @@ export interface RepoConfig {
 /** This collection. The branch the toolkit currently lives on. */
 export const DEFAULT_REPO: RepoConfig = {
   owner: "Soman202",
-  repo: "insta_LinkSource",
-  branch: "PyCodeSearch",
+  repo: "Public_sources_links",
+  branch: "master",
 };
 
 export class GitHubError extends Error {
