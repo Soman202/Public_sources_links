@@ -17,6 +17,17 @@ A complete Prompt engineering list of links for pormpt engineering.
 
 ---
 
+## Ai agents courses from google
+- **Importance:** 5
+- **URL:** https://adventofagents.com/
+- **Checked:** No
+- **Tags:** LLM, free, CS, knowledge
+- **Updated:** 2026-10-08
+
+Ai courses from google send by Yarik
+
+---
+
 ## Claude Academy
 - **Importance:** 7
 - **URL:** https://academy.claude.com/

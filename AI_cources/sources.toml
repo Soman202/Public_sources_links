@@ -31,3 +31,17 @@ platform = "web"
 cost = "free"
 date_editing = "2026-09-06"
 notes = "certificate"
+
+[[source]]
+id = "W5-llm-ai-1ITXSG"
+title = "Ai agents courses from google"
+importance = 5
+description = "Ai courses from google send by Yarik"
+urls = ["https://adventofagents.com/"]
+tags = ["LLM", "free", "CS", "knowledge"]
+checked = "No"
+files = []
+platform = ""
+cost = ""
+date_editing = "2026-10-08"
+notes = ""

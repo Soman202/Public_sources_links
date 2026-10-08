@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19",
-  "count": 40,
+  "generated_at": "2026-10-08",
+  "count": 41,
   "sources": [
     {
       "id": "a-redit-link-with-lots-of-links",
@@ -42,6 +42,28 @@
       "cost": "free",
       "date_editing": "2026-09-06",
       "notes": "certificate",
+      "folder": "AI_cources"
+    },
+    {
+      "id": "W5-llm-ai-1ITXSG",
+      "title": "Ai agents courses from google",
+      "importance": 5,
+      "description": "Ai courses from google send by Yarik",
+      "urls": [
+        "https://adventofagents.com/"
+      ],
+      "tags": [
+        "LLM",
+        "free",
+        "CS",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-10-08",
+      "notes": "",
       "folder": "AI_cources"
     },
     {
@@ -394,27 +416,6 @@
       "folder": "Attachments"
     },
     {
-      "id": "build-your-own-insert-technology-here",
-      "title": "Build your own <insert-technology-here>",
-      "importance": 7,
-      "description": "This is a difficult challenges designed to build a known tools with my bare hards (Excellent practice!). Could help with AI Model, Augmented Reality, Bot, Command-Line Tool, Database and much more!",
-      "urls": [
-        "https://codecrafters.io/",
-        "https://github.com/codecrafters-io/build-your-own-x"
-      ],
-      "tags": [
-        "CS",
-        "challenges"
-      ],
-      "checked": "No",
-      "files": [],
-      "platform": "",
-      "cost": "",
-      "date_editing": "2026-09-05",
-      "notes": "",
-      "folder": "Challenges&competitions"
-    },
-    {
       "id": "coding-interview-university",
       "title": "coding-interview-university",
       "importance": 6,
@@ -677,24 +678,70 @@
       "folder": "CS_cources"
     },
     {
-      "id": "W7-dat-ptb--0516L7",
-      "title": "PTB-XL, a large publicly available electrocardiography dataset",
+      "id": "build-your-own-insert-technology-here",
+      "title": "Build your own <insert-technology-here>",
       "importance": 7,
-      "description": "A dataset (3 GB) of electrocardiography for variety of ages and additional information such as age, sex, height, weight, nurse, site, device and recording_date",
+      "description": "This is a difficult challenges designed to build a known tools with my bare hards (Excellent practice!). Could help with AI Model, Augmented Reality, Bot, Command-Line Tool, Database and much more!",
       "urls": [
-        "https://physionet.org/content/ptb-xl/1.0.3/"
+        "https://codecrafters.io/",
+        "https://github.com/codecrafters-io/build-your-own-x"
       ],
       "tags": [
-        "data",
-        "health"
+        "CS",
+        "challenges"
       ],
-      "checked": "first look",
+      "checked": "No",
       "files": [],
-      "platform": "website",
-      "cost": "free",
-      "date_editing": "2026-09-15",
+      "platform": "",
+      "cost": "",
+      "date_editing": "2026-09-05",
       "notes": "",
-      "folder": "data"
+      "folder": "Challenges&competitions"
+    },
+    {
+      "id": "F4-tp-lect-4WU23R",
+      "title": "Lectures on the Geometric Anatomy of Theoretical Physics",
+      "importance": 4,
+      "description": "All essential math for Theoretical Physics in 35 lectures. Starts with linear aglebra and rapidly continues through matg. Topics include Lie algebras and Lie groups; differential geometry.",
+      "urls": [
+        "https://www.youtube.com/watch?v=V49i_LM8B0E&list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic"
+      ],
+      "tags": [
+        "TP",
+        "lectures",
+        "knowledge",
+        "math"
+      ],
+      "checked": "No",
+      "files": [
+        "Attachments\\TP_materials\\Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"
+      ],
+      "platform": "youtube",
+      "cost": "free",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Education_materials/TP"
+    },
+    {
+      "id": "W3-tp-saku-21THUH",
+      "title": "Sakurai's Modern Quantum Mechanics",
+      "importance": 3,
+      "description": "QM reccomended book with lots of material in it. Containts a book and sumplementary materials to it.",
+      "urls": [
+        "https://github.com/yqchen-sci/Quantum-Mechanics/blob/master/README.md"
+      ],
+      "tags": [
+        "TP",
+        "book",
+        "knowledge"
+      ],
+      "checked": "No",
+      "files": [],
+      "platform": "github",
+      "cost": "free",
+      "date_editing": "2026-09-19",
+      "notes": "",
+      "folder": "Education_materials/TP"
     },
     {
       "id": "gpt-visualisation",
@@ -778,49 +825,24 @@
       "folder": "Tools"
     },
     {
-      "id": "F4-tp-lect-4WU23R",
-      "title": "Lectures on the Geometric Anatomy of Theoretical Physics",
-      "importance": 4,
-      "description": "All essential math for Theoretical Physics in 35 lectures. Starts with linear aglebra and rapidly continues through matg. Topics include Lie algebras and Lie groups; differential geometry.",
+      "id": "W7-dat-ptb--0516L7",
+      "title": "PTB-XL, a large publicly available electrocardiography dataset",
+      "importance": 7,
+      "description": "A dataset (3 GB) of electrocardiography for variety of ages and additional information such as age, sex, height, weight, nurse, site, device and recording_date",
       "urls": [
-        "https://www.youtube.com/watch?v=V49i_LM8B0E&list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic"
+        "https://physionet.org/content/ptb-xl/1.0.3/"
       ],
       "tags": [
-        "TP",
-        "lectures",
-        "knowledge",
-        "math"
+        "data",
+        "health"
       ],
-      "checked": "No",
-      "files": [
-        "Attachments\\TP_materials\\Lectures_on_Geometric_Anatomy_of_Theoretical_Physics.pdf"
-      ],
-      "platform": "youtube",
-      "cost": "free",
-      "date_editing": "2026-09-19",
-      "notes": "",
-      "folder": "Education_materials/TP"
-    },
-    {
-      "id": "W3-tp-saku-21THUH",
-      "title": "Sakurai's Modern Quantum Mechanics",
-      "importance": 3,
-      "description": "QM reccomended book with lots of material in it. Containts a book and sumplementary materials to it.",
-      "urls": [
-        "https://github.com/yqchen-sci/Quantum-Mechanics/blob/master/README.md"
-      ],
-      "tags": [
-        "TP",
-        "book",
-        "knowledge"
-      ],
-      "checked": "No",
+      "checked": "first look",
       "files": [],
-      "platform": "github",
+      "platform": "website",
       "cost": "free",
-      "date_editing": "2026-09-19",
+      "date_editing": "2026-09-15",
       "notes": "",
-      "folder": "Education_materials/TP"
+      "folder": "data"
     }
   ]
 }
